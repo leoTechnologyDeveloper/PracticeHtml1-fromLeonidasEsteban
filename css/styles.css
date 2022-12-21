@@ -1,0 +1,115 @@
+@font-face {
+    font-family: fuenteDescargadaCharter;
+    src: url(../fonts/charter-regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+:root{
+    font-size: 16px;
+    --colorLime : lime;
+    --colorGrey1 : #808080;
+    --colorGrey2 : #616161;     
+    --colorGrey3 : #212121;
+    --colorBlue1 : #0cbaba;
+    --colorBlue2 : blue;
+     
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background-color: snow; */
+    /* color: rgba(33, 33, 33, 1); */
+    color: var(--colorGrey3);
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    /* font-family: system-ui; */
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+font-size: 14px;
+
+} 
+
+.hero{
+    height: 350px;
+    /* background: green; */
+    background-color: #0cbaba;
+    /* background-image:linear-gradient(315deg, #0cbaba 0%, #380036 74%, transparent), url('../images/pattern.png'); */
+    background-image:linear-gradient( to top, rgba(255, 255, 255, .3), transparent), url('../images/pattern.png');
+
+}
+
+header a{
+    text-decoration: none;
+    color: rgba(97, 97, 97, 1);
+}
+
+header a:hover{
+    color: blue;
+}
+
+summary{
+    /* --colorGrey2: lime; */
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    color: var(--colorGrey2);
+    ;
+}
+
+summary:hover{
+    background-color: orangered;
+    color: white;
+    padding:    0px 10px;
+    border-radius: 10px;
+}
+
+
+h1{
+    font-size: 60px;
+    
+}
+
+h2{
+    font-size: 2em;
+    /* font-family: fuenteDescargadaCharter; */
+}
+
+/* .section-numbers{
+    counter-reset: numbers;
+} */
+
+.section-numbers h3{
+    font-size: 1.5em; 
+    counter-increment: numbers;
+}
+
+.section-numbers h3::before{
+    content: counter(numbers)'.';
+    /* Se puede cambiar tipo como numeros romanos */
+    /* content: counter(numbers, upper-roman)'.'; */
+    margin-right: 10px;
+}
+
+.section-numbers h3::after{
+    content: '';
+    width: 32px;
+    height: 4px;
+    background-color: var(--colorGrey3);
+    display: block;
+}
+
+::selection{
+background-color: var(--colorBlue2);
+color: white;
+}
+
+
+pre{
+    background: #FEC62E;
+}
